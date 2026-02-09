@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
 
-  /* خلفية أبيض × أزرق هادئة */
+  /* خلفية بسيطة أبيض × أزرق */
   background:
     radial-gradient(circle at top right, #e6f3ff 0%, transparent 60%),
     radial-gradient(circle at bottom left, #d6ecff 0%, transparent 60%),
@@ -18,56 +18,42 @@ body {
   align-items: center;
 }
 
-/* رمز سن بالخلفية */
+/* سن بالخلفية */
 body::after {
   content: "🦷";
   position: fixed;
-  font-size: 180px;
-  color: rgba(0, 123, 255, 0.08);
-  bottom: 8%;
+  font-size: 160px;
+  color: rgba(0, 123, 255, 0.07);
+  bottom: 10%;
   right: 6%;
-  z-index: 0;
 }
 
 /* الكرت */
 .card {
-  position: relative;
-  z-index: 1;
   background: #ffffff;
   border-radius: 20px;
-  padding: 28px 24px;
+  padding: 30px 24px;
   width: 90%;
   max-width: 380px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
 }
 
+/* شعار السن */
+.logo {
+  font-size: 72px;
+  margin-bottom: 14px;
+}
+
 /* العنوان */
 h1 {
-  margin: 0 0 6px;
+  margin: 0 0 18px;
   font-size: 24px;
   color: #007bff;
 }
 
-.subtitle {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 22px;
-}
-
-/* الحقول */
-input {
-  width: 100%;
-  padding: 13px;
-  margin-top: 10px;
-  border-radius: 12px;
-  border: 1px solid #cfe2ff;
-  font-size: 15px;
-  outline: none;
-}
-
 /* الأزرار */
-button, a.btn {
+a.btn, button {
   display: block;
   width: 100%;
   margin-top: 14px;
@@ -75,13 +61,13 @@ button, a.btn {
   border-radius: 14px;
   border: none;
   background: #007bff;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* روابط */
+/* الروابط */
 a.link {
   display: block;
   margin-top: 16px;
@@ -89,11 +75,13 @@ a.link {
   color: #007bff;
   text-decoration: none;
 }
-/* روابط */
-a.link {
-  display: block;
-  margin-top: 16px;
-  font-size: 14px;
-  color: #007bff;
-  text-decoration: none;
+
+/* الحقول */
+input {
+  width: 100%;
+  padding: 13px;
+  margin-top: 12px;
+  border-radius: 12px;
+  border: 1px solid #cfe2ff;
+  font-size: 15px;
 }
